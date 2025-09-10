@@ -15,7 +15,7 @@ Please keep your answer concise, bullet points are acceptable, but remember to a
 - Limit sharing of personal information online and review privacy settings on social media and accounts.  
 
 ## Experience with Cyber Crimes
-I have experienced phishing attempts by people pretending to be my colleagues and trying to get my personal data. These attempts were avoided by verifying sender details and blaclisting their email address, and not clicking any suspicious links in their email. Hard to prevent these completely so real solution is to be vigilant when someone wants something through email.
+I have experienced phishing attempts by people pretending to be my colleagues and trying to get my personal data. These attempts were avoided by verifying sender details and blacklisting their email address, and not clicking any suspicious links in their email. Hard to prevent these completely so real solution is to be vigilant when someone wants something through email.
 
 ## Areas for Improvement
 - Changing password regulary, even strong password can leak through data breaches.
