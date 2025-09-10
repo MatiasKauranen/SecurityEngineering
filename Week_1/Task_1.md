@@ -5,7 +5,7 @@ Write a short description of the actions you have done to fortify your defenses 
 Have you been a victim of cyber crimes and do you think you could have prevented them? For example phishing and malware attacks. What could you improve on?
 
 Please keep your answer concise, bullet points are acceptable, but remember to answer atleast all mentioned topics.
----
+
 
 ## Personal Cybersecurity Measures
 - Use strong, unique passwords and enable multi-factor authentication if possible.  
