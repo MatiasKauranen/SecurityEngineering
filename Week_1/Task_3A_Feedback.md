@@ -1,0 +1,2 @@
+# Task 3A: Threat Dragon Feedback
+I liked this task for it's hands-on approach to security engineering, and learning about STRIDE model and using Threat Dragon tool. I recommend to keep this task in the course since I believe that doing hands-on exercises is best way to learn new things.

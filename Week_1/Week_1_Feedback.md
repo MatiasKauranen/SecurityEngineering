@@ -1,0 +1,2 @@
+# Week 1 Feedback
+After first week I can say that I'm pleased how hands-on this course has been and I have learned various of tools and skills to improve my security engineering skills such as writing policies, threat modeling and using Zenmap.
