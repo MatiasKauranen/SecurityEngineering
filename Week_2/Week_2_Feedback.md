@@ -1,0 +1,2 @@
+# Week 2 Feedback
+Week 2 had great balance of theory and hands-on learning. History and development of payment cards and their frauds was interesting. I especially liked the introduction of Wazuh platform and it's hands-on assigments. Having knowledge of these kinds of tools will improve security of our work.
