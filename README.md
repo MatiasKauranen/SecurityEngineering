@@ -1,7 +1,7 @@
 # Security Engineering IC00AJ63
 
 This repository contains answers for the course Security Engineering at the University of Oulu.  
-Course material repository [GitHub](https://ouspg.org/resources/github/)
+Course material repository [GitHub](https://github.com/ouspg/SecurityEngineering/tree/main)
 
 Upon completion of the course, the student will be able to:
 * Understand and analyse complex systems and their threat models
