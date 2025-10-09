@@ -1,3 +1,4 @@
+# Week 5
 # Task 1: Bring your own devices
 Following link containing NIST:s security recommendations for workplace bring your own device. On the page 12 is listed following 9 threat events, and your job is to make one A4 sized poster or otherwise shortly summarize what each listed threat event means based on the document or your own research.
 ## Intrusive application practices
@@ -37,4 +38,40 @@ Microarchitectural Data Sampling or MDS for short are set of vulnerabilities, wh
 ## Load Value Injection (LVI)
 Load Value Injection or LVI for short, is vulnerability discovered in march 2020. LVI attacks Intel's Software Guard Extension or SGX for short. It's development of well known Meltdown vulnerability. Unlike Meltdown, LVI can inject data values and is resistant to countermeasures used against Meltdown. There is mitigation guide by Intel which recommends using compiler technology to protect vulnerable parts in code.
 
+# Task 3: Securing OS
+Following is a list of some of the more common vulnerabilities and attack vectors existing in operating systems.
 
+Malware and Viruses  
+Exploiting Software Vulnerabilities  
+Phishing and Social Engineering  
+Drive-by Downloads  
+Zero-Day Exploits  
+USB/Removable Media Attacks  
+Password Cracking  
+
+Make short write up about each that answers following questions
+
+What harm can it cause to you?  
+How OS of your choosing (Windows, Mac, Linux) can mitigate it?  
+Function of the OS itself or external tools?
+
+## Malware and Viruses  
+Malware is software designed to cause harm. Virus is type of malware which replicates itself to spread to new files. Can erase or corrupt files or steal valuable data as credentials to your accounts. Can also encrypt files (ransomware). Windows Defender offers protection with windows updates. Real-time scanning offers added security.
+
+## Exploiting Software Vulnerabilities   
+Softwares can have vulnerabilities which attacker can expose. Attacker can execute code to gain access to other parts of the system which can compromise whole system. Windows updates mitigate vulnerabilities and Windows Sandbox offers isolated environment to run risky software.
+
+## Phishing and Social Engineering  
+Phishing and Social Engineering try to exploit human nature and psychology to get victim to give sensitive data. It can cause stolen credentials, fradulent transcations and unauthorized access. OS and external tools offer little help against these types of attack and best defence is phishing training.
+
+## Drive-by Downloads
+This attack causes silent infection by visiting malicious website. Attacker uses browser or browser plugins to download malicious data without user noticing. This can cause data leakage and system takeover. Windows offers SmartScreen to block harmful downloads and Windows Defender Application Guard for untrusted sites.  
+
+## Zero-Day Exploits  
+Attack which exploits unknown or patchless vulnerabilities. These attacks can bypass defences and compromise system without being detected. OS offers little to mitigate these attacks but external tools and quick patches are important.
+
+## USB/Removable Media Attacks  
+In this attack physical USB drive is used to auto execute malicious code to gain access to device. Best ways to mitigate is to use OS controls to turn auto play off for usb devices. There are also external tools which scan usb devices before execution.
+
+## Password Cracking  
+It's brute-force attack trying to guess victims credentials. This attack can give account information and unauthorized access to the attacker. Windows offers various tools to enforce strong passwords such as policies and MFA. There are also external tools such as password managers to mitigate these attacks.
