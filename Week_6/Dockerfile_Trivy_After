@@ -1,0 +1,56 @@
+# Use Alpine 3.20 base
+FROM alpine:3.20
+
+LABEL maintainer="Teaching Assistant"
+LABEL version="0.0.0.0"
+LABEL description="for students to fix, original can be found in https://github.com/nodejs/docker-node"
+
+# Node and Yarn versions
+ARG NODE_VERSION=22.9.0
+ENV NODE_VERSION="${NODE_VERSION}"
+ENV YARN_VERSION=1.22.22
+ENV PATH=/usr/local/bin:$PATH
+
+SHELL ["/bin/ash", "-o", "pipefail", "-c"]
+
+# Create node user and group
+RUN addgroup -g 1000 node \
+    && adduser -u 1000 -G node -s /bin/sh -D node
+
+WORKDIR /usr/local
+
+# Install Node via Alpine package
+RUN apk add --no-cache nodejs npm \
+    curl=7.79.1-r0 \
+    libstdc++=11.2.1-r3
+
+# Install Yarn manually
+RUN set -eux; \
+    apk add --no-cache gnupg tar ca-certificates; \
+    export GNUPGHOME="$(mktemp -d)"; \
+    for key in 6A010C5166006599AA17F08146C2130DFD2497F5; do \
+        gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" || \
+        gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; \
+    done; \
+    curl -fsSLO --compressed "https://yarnpkg.com/downloads/${YARN_VERSION}/yarn-v${YARN_VERSION}.tar.gz"; \
+    curl -fsSLO --compressed "https://yarnpkg.com/downloads/${YARN_VERSION}/yarn-v${YARN_VERSION}.tar.gz.asc"; \
+    gpg --batch --verify "yarn-v${YARN_VERSION}.tar.gz.asc" "yarn-v${YARN_VERSION}.tar.gz"; \
+    gpgconf --kill all; rm -rf "$GNUPGHOME"; \
+    mkdir -p /opt; tar -xzf "yarn-v${YARN_VERSION}.tar.gz" -C /opt/; \
+    ln -sf /opt/yarn-v${YARN_VERSION}/bin/yarn /usr/local/bin/yarn; \
+    ln -sf /opt/yarn-v${YARN_VERSION}/bin/yarnpkg /usr/local/bin/yarnpkg; \
+    rm "yarn-v${YARN_VERSION}.tar.gz.asc" "yarn-v${YARN_VERSION}.tar.gz"; \
+    yarn --version; rm -rf /tmp/*
+
+# Copy entrypoint
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN chmod 0755 /usr/local/bin/docker-entrypoint.sh
+
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+CMD ["node"]
+
+# Switch to node user
+USER node
+
+# Healthcheck
+HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 CMD node --version || exit 1

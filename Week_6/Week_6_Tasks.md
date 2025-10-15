@@ -110,3 +110,60 @@ Sources:
 [Supply Chain Attacks: The Bump in the Night That Keeps Us Awake](https://www.sep2.security/supply-chain-attacks/) 
 
 
+
+# Task 3: Securing Docker
+
+#  Task 3A) Linting the Dockerfile 0.5p
+What to return:
+
+    What linter you used
+    The dockerfile, before and after fixes
+    Screenshot or .md file of the linter before and after fixes
+
+
+## What linter you used
+Hadolint via docker container in my Arch VM
+## The dockerfile, before and after fixes
+Before: Week_6\Dockerfile_before  
+After : Week_6\Dockerfile_after
+
+## Screenshot or .md file of the linter before and after fixes
+Week_6\linter before and after.png
+
+# Task 3B) Container Image Analysis 0.5p
+What to return:
+
+    What analyzer you used
+    The image used, or the Dockerfile to build it
+    Screenshot or .md file of the analyzer output before and after the fixes
+
+## What analyzer you used
+Trivy via docker container in my Arch VM
+## The image used, or the Dockerfile to build it
+Before: Week_6\Dockerfile_Trivy_Before  
+After : Week_6\Dockerfile_Trivy_After
+## Screenshot or .md file of the analyzer output before and after the fixes
+Before: Week_6\Trivy_before.png  
+After : Week_6\Trivy_after.png
+
+# Task 3C) Runtime Security 1p
+What to return:
+
+    What runtime security scanner you used
+    The image used, or the Dockerfile to build it
+    Screenshot or .md file of the alerts created
+    What commands and/or activities used to trigger the alerts
+
+## What runtime security scanner you used
+Falco Docker image used in Arch VM
+## The image used, or the Dockerfile to build it
+Week_6\Dockerfile_Trivy_Before
+## Screenshot or .md file of the alerts created
+Week_6\Falco_alerts.png
+## What commands and/or activities used to trigger the alerts
+
+    touch /etc/passwd
+    ln -s /etc/shadow /tmp/shadow-link
+    chmod 777 /etc/shadow
+    mkdir /host_root_test
+    rm -rf /host_root_test
