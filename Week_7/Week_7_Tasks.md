@@ -65,3 +65,45 @@ In a vendor-funded model, the certifying authority may be more interested in mak
 Certification gives an advantage over competitors who don’t have certificates. Certificates increase the overall security of the manufacturer due to the policies they bring. Certificates can also protect the company in case of security breaches since these certificates are proof that the company has put effort and resources into their security.
 ### Bad Incentives
 Certificates bring high recurring costs to the company since they require annual renewals to stay up to date. This also requires a lot of effort from the IT department to maintain the certificates, preventing them from working on other projects. In less regulated industries, certificates have a lower return on investment. Certificates can also lead to false assurance and ignorance of the security of other systems.
+
+# Task 4: NIS2 & RED
+
+There are currently three European Union Directives that will affect current and future products and services. These Directives are:
+
+    Cyber Resilience Act (CRA)
+    Radio Equipment Directive (RED)
+    Revised Directive on Security of Network and Information Systems (NIS2)
+
+Traficom has collected information regarding all three quite concisely providing a good starting point for familiarizing on the subject
+
+    (CRA) https://www.kyberturvallisuuskeskus.fi/en/toimintamme/saantely-ja-valvonta/kyberkestavyyssaados-cyber-resilience-act-cra
+    (RED) https://traficom.fi/en/news/new-information-security-requirements-eu-improve-information-security-wireless-devices
+    (NIS2) https://www.kyberturvallisuuskeskus.fi/en/our-activities/regulation-and-supervision/nis2-european-union-cybersecurity-directive
+
+PICK ONE, Either CRA, RED or NIS2 and answer the following questions
+
+    Concisely explain the main goal of the directive?
+    Which types of products does it concern?
+    Which types of organizations does it concern?
+    What kind of cybersecurity measures have to be implemented for a product/organization to comply with the directive?
+    When (Date) do organizations/products need to comply with the directive?
+    What are possible penalties?
+    Your own thoughts: How does this benefit you/society overall. Are there positive and negative aspects?
+
+You can answer directly to each bullet point with few sentences
+
+## Cyber Resilience Act (CRA)
+### Concisely explain the main goal of the directive?
+The main goal of the directive is to improve the security of products and software sold in the EU market. These directives aim to ensure that products have fewer vulnerabilities.
+### Which types of products does it concern?
+All products with a digital element that can connect to other devices via a network.
+### Which types of organizations does it concern?
+It concerns manufacturers, importers, and other vendors who sell these products in the EU.
+### What kind of cybersecurity measures have to be implemented for a product/organization to comply with the directive?
+Measures include secure default settings, automatic security updates, prevention of unauthorized access, confidential storage, minimization of data, and securing key functionalities.
+### When (Date) do organizations/products need to comply with the directive?
+Notified bodies: 11 June 2026, vulnerability reporting: 11 September 2026, and full product compliance with essential cybersecurity requirements: 11 December 2027.
+### What are possible penalties?
+No specific penalties are listed, but most likely the product or software would be withdrawn from the EU market.
+### Your own thoughts: How does this benefit you/society overall. Are there positive and negative aspects?
+Hopefully, this increases overall cybersecurity for devices and software in the EU market and abroad, as manufacturers aim to enter the EU market. However, small businesses may struggle with these policies due to costs, and if handled poorly, slow EU bureaucracy could hinder innovation across the tech market in the EU.
