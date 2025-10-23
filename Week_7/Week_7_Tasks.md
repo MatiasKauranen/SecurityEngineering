@@ -1,4 +1,4 @@
- Task 1: Safety Concerns
+# Task 1: Safety Concerns
 
 In terms of medical equipment and automotive industry mentioned in the Lecture 13, consider the following:
 
